@@ -15,9 +15,9 @@ namespace kv_k
                 float a, b, c = 0;
                 Console.WriteLine("Enter parametr a");
                 a = float.Parse(Console.ReadLine());
-                Console.WriteLine("Enter parametr a");
+                Console.WriteLine("Enter parametr b");
                 b = float.Parse(Console.ReadLine()); 
-                If (a != 0 and b != 0)
+                If (b != 0)
                     c = a / b;
                 Console.WriteLine("Answer is " + Convert.ToString(c)); 
                 Console.ReadKey();
