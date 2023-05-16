@@ -1,0 +1,25 @@
+Перед вами код программы. Ваша задача описать что делает данная программа и составить алгоритм ее работы.
+Описание: программа считывает два числа a и b, если a больше b, то в ответ выводит b в квадрате минус a,
+если  b больше a, то в ответ выводит a в кубе минут b. 
+
+using System;
+namespace ConsoleApp4
+{
+class Program
+{
+static void Main(string[] args)
+{
+double a, b, c = 0;
+a = Convert.ToInt32(Console.ReadLine()); b = Convert.ToInt32(Console.ReadLine()); if (a > b)
+{
+c = Math.Pow(b, 2) - a;
+ 
+}
+else
+{
+c = Math.Pow(a, 3) - b;
+}
+Console.WriteLine(c); Console.ReadKey();
+}
+}
+}
