@@ -1,0 +1,23 @@
+Анализ:
+Значение total по умолчанию равно 0;
+Условие - пока i = 0, меньше 20 и каждую итерацию к ее значению прибавляется 2:
+К значению total прибавить выражение i/2;
+Вывод значения total
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double total = 0;
+            for (int i = 0; i < 101; i = i + 1)
+            {
+                total += i;
+            }
+            Console.WriteLine("Сумма: " + Convert.ToString(total));
+            Console.ReadKey();
+        }
+    }
+}

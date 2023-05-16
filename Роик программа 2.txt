@@ -1,0 +1,32 @@
+Алгоритм:
+Ввод значения а;
+Ввод значения b;
+Если значение a > b, то значению с присваевается значение выражения - b*b-a;
+Иначе с присваевается значение выражения - a*a*a-b;
+Вывод значения c.
+
+
+using System;
+
+namespace ConsoleApp3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c = 0;
+            a = Convert.ToInt32(Console.ReadLine()); 
+            b = Convert.ToInt32(Console.ReadLine()); 
+            if (a > b)
+            {
+                c = Math.Pow(b, 2) - a;
+
+            }
+            else
+            {
+                c = Math.Pow(a, 3) - b;
+            }
+            Console.WriteLine(c); Console.ReadKey();
+        }
+    }
+}
