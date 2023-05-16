@@ -1,0 +1,23 @@
+Код программы, которая требует ввести два числа. Программа их сравнивает. Если 1ое число больше 2го, то программа возведет 2ое число в квадрат и вычтет 1ое. 
+В другом случае программа возведет 1ое число в третью степень и вычтет 2ое число.
+
+namespace ConsoleApp4
+{
+class Program
+{
+static void Main(string[] args)
+{
+double a, b, c = 0;
+a = Convert.ToInt32(Console.ReadLine()); b = Convert.ToInt32(Console.ReadLine()); if (a > b) 
+{
+c = Math.Pow(b, 2) - a;
+ 
+}
+else
+{
+c = Math.Pow(a, 3) - b;
+}
+Console.WriteLine(c); Console.ReadKey();
+}
+}
+}
