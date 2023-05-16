@@ -2,17 +2,17 @@
 
 namespace ConsoleApp4
 {
-class Program
-{
-static void Main(string[] args)
-{
-double total = 0;
-for (int i = 0; i < 20; i = i + 2)
-{
-total += i / 2;
-}
-Console.WriteLine("Сумма: " + Convert.ToString(total));
-Console.ReadKey();
-}
-}
+ 	class Program
+	{
+		static void Main(string[] args)
+		{
+			double total = 0;
+			for (int i = 0; i <= 100; i= i++)
+			{
+				total += i;
+			}
+			Console.WriteLine("Сумма: " + Convert.ToString(total));
+			Console.ReadKey();
+		}
+	}
 }
