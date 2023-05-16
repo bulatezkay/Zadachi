@@ -2,21 +2,22 @@
 
 namespace ConsoleApp4
 {
-class Program
-{
-static void Main(string[] args)
-{
-double a, b, c = 0;
-a = Convert.ToInt32(Console.ReadLine()); b = Convert.ToInt32(Console.ReadLine()); if (a > b)
-{
-c = Math.Pow(b, 2) - a;
- 
-}
-else
-{
-c = Math.Pow(a, 3) - b;
-}
-Console.WriteLine(c); Console.ReadKey();
-}
-}
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b;
+            a = Convert.ToDouble(Console.ReadLine());//Ввод числа
+            b = Convert.ToDouble(Console.ReadLine());//Ввод числа
+            if (a > b)//Если а>b то выполнятеся первое действие иначе второе
+            {
+                Console.WriteLine(Math.Pow(b, 2) - a);
+            }
+            else
+            {
+                Console.WriteLine( Math.Pow(a, 3) - b);
+            }
+            Console.ReadKey();
+        }
+    }
 }
